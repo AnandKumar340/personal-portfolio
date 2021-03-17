@@ -1,1 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="Anand Gupta ">
+      <meta name="email" content="ananditspecial@gmail.com">
+      <meta name="profile" content="https://themeforest.net/user/mironcoder">
+      <meta name="name" content="Anand Gupta ">
+      <meta name="type" content="Personal Portfolio">
+      <meta name="title" content="Anand Gupta- Personal Portfolio website">
+      <meta name="keywords" content="Anand, clean, creative, resume, cv, designer, developer, responsive, minimal, freelancer">
+      <title>Anand Gupta - Personal Portfolio Website </title>
+      <link rel="icon" href="img/favicon.png">
+      <link rel="stylesheet" href="font/flaticon/index/flaticon.css">
+      <!-- font awesome  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+      <link rel="stylesheet" href="css/vendor/slick.css">
+      <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+      <link rel="stylesheet" href="css/custom/main.css">
+      <link rel="stylesheet" href="css/custom/index.css">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Playball&family=Tangerine:wght@700&display=swap" rel="stylesheet"><style type="text/css">
+   body {
+  margin: 20px;
+}
+    .title h2{
+         font-family: 'Playball', cursive;
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+.container {
+  text-align: center;
+}
+
+.mockup {
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  font-size: 0;
+  perspective: 2400px;
+  perspective-origin: 50% 100%;
+  opacity: 0;
+  transition: 500ms opacity;
+}
+
+.mockup.loaded {
+  opacity: 1;
+}
+
+.mockup .part .top,
+.mockup .part .bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mockup .part.top {
+  transform: translate3d(0, 0, 0) rotateX(-90deg);
+}
+
+.mockup:hover .part.top {
+  transform: translate3d(0, 0, 0) rotateX(0deg);
+}
+
+.mockup .part {
+  display: inline-block;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+  transition: 900ms;
+}
+
+.mockup.opened .part .top {
+  transform: translate3d(0, 0, -11px) rotateX(90deg) scale(1, 1);
+}
+
+.mockup .part .top {
+  transform-origin: 50% 0;
+  transform: translate3d(0, 0, -11px) rotateX(90deg);
+  transition: 900ms;
+}
+
+.mockup img {
+  display: block;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.mockup .part .cover {
+  position: relative;
+}
+
+.mockup .banner-inner {
+  display: block;
+  position: absolute;
+  top: 8%;
+  left: 4%;
+  width: 92%;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 1px);
+}
+
+.mockup .part.bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0) rotateX(-90deg);
+}
+
+.mockup .part .bottom {
+    transform-origin: 50% 0;
+    transform: translate3d(0,0,0) rotateX(90deg);
+}
+</style>
+
+   </head>
+   <body>
+      <a class="back2top-btn" href="#"><i class="fa fa-arrow-up"></i></a>
+      <nav class="navbar-part">
+         <div class="container">
+            <div class="navbar-content">
+               <a class="navbar-logo" href="index.html"><img src="img/logo.png" alt="logo"></a><button class="navbar-toggle" type="button"><i class="fa fa-bars"></i></button>
+               <div class="navbar-slide">
+                  <a class="navbar-cross" href=""><i class="fa fa-times"></i></a>
+                  <ul class="navbar-list">
+                     <li class="navbar-item active"><a class="navbar-link" href="index.html">Home</a></li>
+                     <li class="navbar-item"><a class="navbar-link" href="portfolio.html">portfolio</a></li>
+                     <li class="navbar-item"><a class="navbar-link" href="#service">services</a></li>
+                     <li class="navbar-item"><a class="navbar-link" href="#package">package</a></li>
+                     <li class="navbar-item"><a class="navbar-link" href="#contact">contact</a></li>
+                  </ul>
+                  <div class="navbar-btn"><a class="btn btn-inline" href="tel:9315244186"><i class="fa fa-phone"></i><span>need to talk?</span></a></div>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+         <div class="banner-inner">
+           <img src="portfolio-img/gurudevo.png">
+         </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+  
+      <div class="title">
+         <a href="https://gurudevo.in/" target="_blank"><h2>Gurudevo (Astrology) </h2>  </a>
+      </div>
+
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/legaladvisory.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://legaladvisory.org/" target="_blank"><h2>Legaladvisory (Social Business)</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/midasiaroutes.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://midasiaroutes.com/" target="_blank"><h2>Midasiaroutes (Travel & Tour)</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/mymuscle.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://mymuscle.in/" target="_blank"><h2>Mymuscle (Ecommerce)</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/wahstory.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://wahstory.com/" target="_blank"><h2>Wahstory (Share Story)</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/bkvelvet.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://bkvelvet.com/" target="_blank"><h2>BK Velvet (Ecommerce)</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/newtour.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://anandkumar340.github.io/newtour/" target="_blank"><h2>Hotel (Hotel & Travel)</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/architechure.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://anandkumar340.github.io/architechure/" target="_blank"><h2>Architechure (Architechure & Interior Design)</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/my-gym.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://anandkumar340.github.io/my-gym/" target="_blank"><h2>MyGym (Gym & Fitness Center)</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/law2.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://anandkumar340.github.io/lawsite2/" target="_blank"><h2>Law Legal Actions</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/law.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://anandkumar340.github.io/lawsite/" target="_blank"><h2>Law Legal Actions</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/rexlaw.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://anandkumar340.github.io/rexlaw2.github.io/" target="_blank"><h2>Law Legal Actions</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/rexlaw3.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://anandkumar340.github.io/rexlaw3.github.io/" target="_blank"><h2>Law Legal Actions</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/construction.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://anandkumar340.github.io/construction/" target="_blank"><h2>Construction (Construct Building & Mining)</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/garment.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://anandkumar340.github.io/garment/" target="_blank"><h2>
+         Garment (Garment Manufacturing & Tailoring)</h2>   </a>
+   </div>
+</div>
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/university.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://anandkumar340.github.io/university.github.io/" target="_blank"><h2>
+         Schools & Colleges </h2>   </a>
+   </div>
+</div>
+
+
+<div class="container">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+
+      <div class="banner-inner">
+           <img src="portfolio-img/portfolio.png">
+      </div>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+    </div>
+  </div>
+   <div class="title">
+         <a href="https://anandkumar340.github.io/portfolio.github.io/" target="_blank"><h2>
+         Portfolio (Online Personal Portfolio Like Your Biodata) </h2>   </a>
+   </div>
+</div>
+
+      <section class="section footer-part">
+         <div class="container">
+          
+            <div class="row">
+               <div class="col-lg-12">
+                  <ul class="footer-icon">
+                     <li><a class="icon icon-inline" href="#"><i class="fa fa-facebook-f"></i></a></li>
+                     <li><a class="icon icon-inline" href="#"><i class="fa fa-twitter"></i></a></li>
+                     <li><a class="icon icon-inline" href="#"><i class="fa fa-linkedin"></i></a></li>
+                     
+                  </ul>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <ul class="footer-text">
+                     <li>
+                        <h6>&copy; Copyright - <span>2021</span></h6>
+                     </li>
+                     <li>
+                        <h6>All rights reserved </h6>
+                     </li>
+                                      </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <a href="https://api.whatsapp.com/send?phone=919315244186" class="whatsapp" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+         <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5fd11ec0a1d54c18d8f21698/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+      <script src="js/vendor/jquery-1.12.4.min.js"></script><script src="js/vendor/popper.min.js"></script><script src="js/vendor/bootstrap.min.js"></script><script src="js/vendor/slick.min.js"></script><script src="js/custom/slick.js"></script><script src="js/vendor/counterup.min.js"></script><script src="js/vendor/waypoints.min.js"></script><script src="js/custom/counterup.js"></script><script src="js/custom/main.js"></script>
+   </body>
+</html>
 
